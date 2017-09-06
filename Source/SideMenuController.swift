@@ -169,7 +169,7 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
         return self._preferences.drawing.sidePanelPosition
     }()
     
-    var screenSize: CGSize {
+    open var screenSize: CGSize {
         return self.view.frame.size
     }
     
