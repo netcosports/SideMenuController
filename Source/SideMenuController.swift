@@ -220,6 +220,7 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
         }
         
         UIView.animate(withDuration: 0.35) {
+            self.statusBarUnderlay.frame = CGRect(x: 0, y: 0, width: self.screenSize.width, height: self.statusBarHeight)
             self.centerPanel.frame = self.centerPanelFrame
             // reposition side panel
             self.sidePanel.frame = self.sidePanelFrame
